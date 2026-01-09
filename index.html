@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dhanvi | Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        .glass-card {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(226, 232, 240, 1);
+        }
+
+        .gradient-text {
+            background: linear-gradient(135deg, #2563eb 0%, #7c3aed 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .skill-tag {
+            background: #f1f5f9;
+            transition: all 0.3s ease;
+        }
+
+        .skill-tag:hover {
+            background: #e2e8f0;
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900 leading-relaxed">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 glass-card px-6 py-4 shadow-sm">
+        <div class="max-w-5xl mx-auto flex justify-between items-center">
+            <span class="text-xl font-bold gradient-text tracking-tighter">DHANVI</span>
+            <div class="hidden md:flex space-x-8 text-sm font-medium text-slate-600">
+                <a href="#about" class="hover:text-blue-600 transition">About</a>
+                <a href="#education" class="hover:text-blue-600 transition">Education</a>
+                <a href="#skills" class="hover:text-blue-600 transition">Skills</a>
+                <a href="#projects" class="hover:text-blue-600 transition">Projects</a>
+                <a href="#contact" class="hover:text-blue-600 transition">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="about" class="pt-32 pb-20 px-6">
+        <div class="max-w-5xl mx-auto">
+            <div class="max-w-3xl">
+                <h1 class="text-5xl md:text-7xl font-bold mb-6 tracking-tight">
+                    Aspiring <span class="gradient-text">Electronics</span> Engineer.
+                </h1>
+                <p class="text-lg md:text-xl text-slate-600 mb-8 leading-relaxed">
+                    First-year Electronics and Communication Engineering student at St. Aloysius University. 
+                    Passionate about electronics, communication systems, and AI-driven technology.
+                </p>
+                <div class="flex flex-wrap gap-4">
+                    <a href="#contact" class="bg-blue-600 text-white px-8 py-3 rounded-full font-semibold shadow-lg hover:bg-blue-700 transition">Get In Touch</a>
+                    <div class="flex items-center space-x-4 px-4 text-slate-500">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span>Mangalore, India</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Content Sections -->
+    <main class="max-w-5xl mx-auto px-6 space-y-24 pb-20">
+        
+        <!-- Education -->
+        <section id="education">
+            <h2 class="text-2xl font-bold mb-10 flex items-center">
+                <span class="w-8 h-1 bg-blue-600 mr-4 rounded-full"></span> Education
+            </h2>
+            <div class="space-y-8">
+                <div class="relative pl-8 border-l-2 border-slate-200">
+                    <div class="absolute -left-[9px] top-0 w-4 h-4 bg-blue-600 rounded-full border-4 border-white shadow-sm"></div>
+                    <span class="text-sm font-bold text-blue-600 mb-1 block">2025 — 2029</span>
+                    <h3 class="text-xl font-bold">B.Tech in Electronics & Communication Engineering</h3>
+                    <p class="text-slate-600">St. Aloysius Deemed to be University</p>
+                </div>
+                <div class="relative pl-8 border-l-2 border-slate-200">
+                    <div class="absolute -left-[9px] top-0 w-4 h-4 bg-slate-300 rounded-full border-4 border-white shadow-sm"></div>
+                    <span class="text-sm font-bold text-slate-500 mb-1 block">2024 — 2025</span>
+                    <h3 class="text-xl font-bold">2nd PUC (Pre-University)</h3>
+                    <p class="text-slate-600">St. Aloysius PU College — <span class="font-semibold text-slate-900">91%</span></p>
+                </div>
+                <div class="relative pl-8 border-l-2 border-slate-200">
+                    <div class="absolute -left-[9px] top-0 w-4 h-4 bg-slate-300 rounded-full border-4 border-white shadow-sm"></div>
+                    <span class="text-sm font-bold text-slate-500 mb-1 block">2022 — 2023</span>
+                    <h3 class="text-xl font-bold">SSLC</h3>
+                    <p class="text-slate-600">Chinmaya High School, Mangalore — <span class="font-semibold text-slate-900">90.72%</span></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills & Certifications -->
+        <section id="skills" class="grid md:grid-cols-2 gap-12">
+            <div>
+                <h2 class="text-2xl font-bold mb-10 flex items-center">
+                    <span class="w-8 h-1 bg-blue-600 mr-4 rounded-full"></span> Technical Skills
+                </h2>
+                <div class="flex flex-wrap gap-3">
+                    <span class="skill-tag px-4 py-2 rounded-lg font-medium text-slate-700">C Programming</span>
+                    <span class="skill-tag px-4 py-2 rounded-lg font-medium text-slate-700">Python (Basics)</span>
+                    <span class="skill-tag px-4 py-2 rounded-lg font-medium text-slate-700">SQL</span>
+                    <span class="skill-tag px-4 py-2 rounded-lg font-medium text-slate-700">HTML5</span>
+                    <span class="skill-tag px-4 py-2 rounded-lg font-medium text-slate-700">Database Management</span>
+                    <span class="skill-tag px-4 py-2 rounded-lg font-medium text-slate-700">Electronics Design</span>
+                </div>
+            </div>
+            <div>
+                <h2 class="text-2xl font-bold mb-10 flex items-center">
+                    <span class="w-8 h-1 bg-purple-600 mr-4 rounded-full"></span> Certifications
+                </h2>
+                <ul class="space-y-4">
+                    <li class="flex items-start">
+                        <i class="fa-solid fa-certificate text-purple-600 mt-1 mr-3"></i>
+                        <div>
+                            <p class="font-semibold">Microsoft AI Learning Challenge</p>
+                            <p class="text-sm text-slate-500">AINNOVATION 2025</p>
+                        </div>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fa-solid fa-certificate text-purple-600 mt-1 mr-3"></i>
+                        <div>
+                            <p class="font-semibold">Responsible AI: Applying Principles</p>
+                            <p class="text-sm text-slate-500">Google Cloud</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Projects -->
+        <section id="projects">
+            <h2 class="text-2xl font-bold mb-10 flex items-center">
+                <span class="w-8 h-1 bg-blue-600 mr-4 rounded-full"></span> Featured Project
+            </h2>
+            <div class="bg-white p-8 rounded-3xl border border-slate-200 shadow-sm hover:shadow-md transition-shadow">
+                <div class="flex flex-col md:flex-row md:items-center justify-between mb-6">
+                    <h3 class="text-2xl font-bold">Early Care: Detect & Protect</h3>
+                    <div class="flex space-x-2 mt-4 md:mt-0">
+                        <span class="text-xs font-bold uppercase tracking-widest bg-blue-100 text-blue-700 px-3 py-1 rounded-full">HTML</span>
+                        <span class="text-xs font-bold uppercase tracking-widest bg-emerald-100 text-emerald-700 px-3 py-1 rounded-full">SQL</span>
+                        <span class="text-xs font-bold uppercase tracking-widest bg-amber-100 text-amber-700 px-3 py-1 rounded-full">Python</span>
+                    </div>
+                </div>
+                <p class="text-slate-600 mb-6 leading-relaxed">
+                    Developed a basic healthcare-focused application designed for early disease detection awareness. 
+                    Aimed to promote preventive healthcare and reduce avoidable hospital loads by providing users 
+                    with accessible health screening logic.
+                </p>
+                <ul class="grid md:grid-cols-2 gap-4 text-sm text-slate-600">
+                    <li class="flex items-center"><i class="fa-solid fa-check text-blue-500 mr-2"></i> Designed frontend using HTML</li>
+                    <li class="flex items-center"><i class="fa-solid fa-check text-blue-500 mr-2"></i> Managed user data with SQL</li>
+                    <li class="flex items-center"><i class="fa-solid fa-check text-blue-500 mr-2"></i> Implemented logic using Python</li>
+                    <li class="flex items-center"><i class="fa-solid fa-check text-blue-500 mr-2"></i> Healthcare Focus</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact">
+            <div class="bg-slate-900 rounded-[3rem] p-10 md:p-16 text-white text-center">
+                <h2 class="text-3xl font-bold mb-4">Let's Connect</h2>
+                <p class="text-slate-400 mb-10 max-w-lg mx-auto">Open for learning opportunities and collaborations in Electronics and AI.</p>
+                
+                <div class="grid md:grid-cols-3 gap-8 mb-10">
+                    <a href="mailto:dhanvikunder@gmail.com" class="p-6 bg-slate-800 rounded-2xl hover:bg-slate-700 transition">
+                        <i class="fa-solid fa-envelope text-2xl mb-3 text-blue-400"></i>
+                        <p class="text-sm font-medium">dhanvikunder@gmail.com</p>
+                    </a>
+                    <a href="https://linkedin.com/in/Dhanvi Kunder" target="_blank" class="p-6 bg-slate-800 rounded-2xl hover:bg-slate-700 transition">
+                        <i class="fa-brands fa-linkedin text-2xl mb-3 text-blue-400"></i>
+                        <p class="text-sm font-medium">Dhanvi Kunder</p>
+                    </a>
+                    <div class="p-6 bg-slate-800 rounded-2xl">
+                        <i class="fa-solid fa-phone text-2xl mb-3 text-blue-400"></i>
+                        <p class="text-sm font-medium">+91 9483142017</p>
+                    </div>
+                </div>
+
+                <p class="text-xs text-slate-500 uppercase tracking-widest">Mulki, Mangalore-574154</p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="py-10 text-center text-slate-400 text-sm">
+        <p>&copy; 2024 Dhanvi. Built with HTML & Tailwind.</p>
+    </footer>
+
+</body>
+</html>
